@@ -1,0 +1,184 @@
+<div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <h3>{{ $post_count }}</h3>
+                    <p>كل Posts</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-images"></i>
+                </div>
+                <a href="{{ route('admin.posts.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3>{{ $post_count_day }}</h3>
+                    <p>Posts جديدة</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-wand"></i>
+                </div>
+                <a href="{{ route('admin.posts.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3>{{ $post_count_month }}</h3>
+                    <p>Posts اخر شهر</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-star"></i>
+                </div>
+                <a href="{{ route('admin.posts.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>{{ $post_count_week }}</h3>
+
+                    <p>Posts اخر اسبوع</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-heart"></i>
+                </div>
+                <a href="{{ route('admin.posts.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+
+        <!--*************************************-->
+
+<div class="col-lg-3 col-xs-6">
+    <div class="small-box bg-aqua">
+        <div class="inner">
+            <h3>{{ $message_count }}</h3>
+            <p>كل الرسائل</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-chatboxes"></i>
+        </div>
+        <a href="{{ route('admin.messages.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<div class="col-lg-3 col-xs-6">
+    <div class="small-box bg-green">
+        <div class="inner">
+            <h3>{{ $message_count_day }}</h3>
+            <p>رسائل جديدة</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-chatbox-working"></i>
+        </div>
+        <a href="{{ route('admin.messages.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<div class="col-lg-3 col-xs-6">
+    <!-- small box -->
+    <div class="small-box bg-yellow">
+        <div class="inner">
+            <h3>{{ $message_count_month }}</h3>
+            <p>الرسائل اخر شهر</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-chatbox"></i>
+        </div>
+        <a href="{{ route('admin.messages.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<div class="col-lg-3 col-xs-6">
+    <!-- small box -->
+    <div class="small-box bg-red">
+        <div class="inner">
+            <h3>{{ $message_count_week }}</h3>
+
+            <p>الرسائل اخر اسبوع</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-chatbox"></i>
+        </div>
+        <a href="{{ route('admin.messages.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+
+
+
+
+<div class="col-lg-3 col-xs-6">
+    <div class="small-box bg-aqua">
+        <div class="inner">
+            <h3>{{ $category_count }}</h3>
+            <p>كل الاقسام</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-archive"></i>
+        </div>
+        <a href="{{ route('admin.categories.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<div class="col-lg-3 col-xs-6">
+    <div class="small-box bg-green">
+        <div class="inner">
+            <h3>{{ $post_count_read }}</h3>
+            <p>Posts غير مقروءة</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-ios-photos-outline"></i>
+        </div>
+        <a href="{{ route('admin.posts.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<div class="col-lg-3 col-xs-6">
+    <!-- small box -->
+    <div class="small-box bg-yellow">
+        <div class="inner">
+            <h3>{{ $comment_count_read }}</h3>
+            <p>تعليقات غير مقروءة</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-ios-circle-filled"></i>
+        </div>
+        <a href="{{ route('admin.comments.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<div class="col-lg-3 col-xs-6">
+    <!-- small box -->
+    <div class="small-box bg-red">
+        <div class="inner">
+            <h3>{{ $message_count_read }}</h3>
+
+            <p>رسائل غير مقروءة</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-android-checkbox-outline"></i>
+        </div>
+        <a href="{{ route('admin.messages.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<div class="col-lg-3 col-xs-6">
+    <div class="small-box bg-aqua">
+        <div class="inner">
+            <h3>{{ $contact_count_read }}</h3>
+            <p>رسائل اتصل بنا غير مقروءة</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-ios-briefcase-outline"></i>
+        </div>
+        <a href="{{ route('admin.contacts.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+</div>
+<div class="col-lg-3 col-xs-6">
+    <div class="small-box bg-green">
+        <div class="inner">
+            <h3>{{ $contact_count_reply }}</h3>
+            <p>رسائل اتصل بنا غير مجابة</p>
+        </div>
+        <div class="icon">
+            <i class="ion ion-ios-download-outline"></i>
+        </div>
+        <a href="{{ route('admin.contacts.index') }}" class="small-box-footer">مشاهدة الكل <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+</div>

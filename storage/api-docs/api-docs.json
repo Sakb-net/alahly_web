@@ -1,0 +1,2143 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "ALAHLIFC API",
+        "version": "1.1.0"
+    },
+    "basePath": "/api/v1",
+    "paths": {
+        "/add_watch": {
+            "post": {
+                "tags": [
+                    "watch"
+                ],
+                "summary": "add video watch",
+                "operationId": "v1/add_watch",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "video_link",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/add_del_like": {
+            "post": {
+                "tags": [
+                    "like,dislike"
+                ],
+                "summary": "add or delete like for video or news or product or comment or comment_news or comment_video or comment_product",
+                "operationId": "v1/add_del_like",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "link",
+                        "in": "formData",
+                        "description": "link thing that add to like or delete",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "video or news or product or comment or comment_news or comment_video or comment_product",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/uploadImage": {
+            "post": {
+                "tags": [
+                    "upload"
+                ],
+                "summary": "upload image by using String Based46 ",
+                "operationId": "uploadImage",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "String Based46 of uploadImage",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/uploadImageFile": {
+            "post": {
+                "tags": [
+                    "upload"
+                ],
+                "summary": "upload image by uploading image from your computer ",
+                "operationId": "uploadImageFile",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "file uploadImage",
+                        "required": true,
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/uploadVideo": {
+            "post": {
+                "tags": [
+                    "upload"
+                ],
+                "summary": "upload video by using String Based46 ",
+                "operationId": "uploadVideo",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "video",
+                        "in": "formData",
+                        "description": "String Base46 of uploadVideo",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/uploadAudio": {
+            "post": {
+                "tags": [
+                    "upload"
+                ],
+                "summary": "upload audio by using String Based46 ",
+                "operationId": "uploadAudio",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "audio",
+                        "in": "formData",
+                        "description": "String Base46 of uploadAudio",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/uploadAudioFile": {
+            "post": {
+                "tags": [
+                    "upload"
+                ],
+                "summary": "upload audio by uploading audio from your computer",
+                "operationId": "uploadAudioFile",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "audio",
+                        "in": "formData",
+                        "description": "file uploadAudio",
+                        "required": true,
+                        "type": "file"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/get_country": {
+            "post": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "v1/get_country",
+                "operationId": "get_country",
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/get_city": {
+            "post": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "v1/get_city",
+                "operationId": "get_city",
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/register": {
+            "post": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "creat new account",
+                "operationId": "register",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "display_name",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "country",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "city",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "state",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "reg_site",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_id",
+                        "in": "formData",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "fcm_token",
+                        "in": "formData",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/login/email": {
+            "post": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "login by email",
+                "operationId": "loginEmail",
+                "parameters": [
+                    {
+                        "name": "email_user_name",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "device_id",
+                        "in": "formData",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "fcm_token",
+                        "in": "formData",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/logout": {
+            "post": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "logout",
+                "operationId": "logout",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/comments": {
+            "post": {
+                "tags": [
+                    "comment"
+                ],
+                "summary": "get all comments",
+                "operationId": "comments",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "type": "string"
+                    },
+                    {
+                        "name": "link",
+                        "in": "formData",
+                        "description": "this link type only",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "default type is video and can use (news,video,product)",
+                        "type": "string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "formData",
+                        "description": "default limit 12  and can you increase limit",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/add_comment": {
+            "post": {
+                "tags": [
+                    "comment"
+                ],
+                "summary": "add comment",
+                "operationId": "add_comment",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "type": "string"
+                    },
+                    {
+                        "name": "link",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "content",
+                        "in": "formData",
+                        "description": "You must be present if image and video and audio are empty",
+                        "type": "string"
+                    },
+                    {
+                        "name": "rate",
+                        "in": "formData",
+                        "description": "this use when type = product",
+                        "type": "number"
+                    },
+                    {
+                        "name": "link_parent",
+                        "in": "formData",
+                        "description": "You must be present link of parent comment with answer and reply",
+                        "type": "string"
+                    },
+                    {
+                        "name": "user_email",
+                        "in": "formData",
+                        "description": "should be found if access-token is empty",
+                        "type": "string"
+                    },
+                    {
+                        "name": "user_name",
+                        "in": "formData",
+                        "description": "should be found if access-token is empty",
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "path image after upload on server",
+                        "type": "string"
+                    },
+                    {
+                        "name": "video",
+                        "in": "formData",
+                        "description": "path video after upload on server",
+                        "type": "string"
+                    },
+                    {
+                        "name": "audio",
+                        "in": "formData",
+                        "description": "path audio after upload on server",
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "default type is video and can use (news,video,product)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/update_comment": {
+            "post": {
+                "tags": [
+                    "comment"
+                ],
+                "summary": "update comment",
+                "operationId": "update_comment",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "comment_link",
+                        "in": "formData",
+                        "description": "link comment to update data of it",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "content",
+                        "in": "formData",
+                        "description": "You must be present if image and video and audio are empty",
+                        "type": "string"
+                    },
+                    {
+                        "name": "rate",
+                        "in": "formData",
+                        "description": "This use only when type=product",
+                        "type": "number"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "description": "path image after upload on server",
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "default type is video and can use (news,video)",
+                        "type": "string"
+                    },
+                    {
+                        "name": "video",
+                        "in": "formData",
+                        "description": "path video after upload on server",
+                        "type": "string"
+                    },
+                    {
+                        "name": "audio",
+                        "in": "formData",
+                        "description": "path audio after upload on server",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/delete_comment": {
+            "post": {
+                "tags": [
+                    "comment"
+                ],
+                "summary": "delete comment",
+                "operationId": "delete_comment",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "comment_link",
+                        "in": "formData",
+                        "description": "link of comment or video or match or product to delete",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "default type is video and can use (news,video,product)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/albums": {
+            "post": {
+                "tags": [
+                    "album"
+                ],
+                "summary": "get all albums",
+                "operationId": "albums",
+                "parameters": [
+                    {
+                        "name": "num_page",
+                        "in": "formData",
+                        "description": " number of page strat from zero ( 0 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "formData",
+                        "description": " limit is number albums will send in each time default ( 12 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/albums/single": {
+            "post": {
+                "tags": [
+                    "album"
+                ],
+                "summary": "get image of single album by album link",
+                "operationId": "albumsSingle",
+                "parameters": [
+                    {
+                        "name": "albums_link",
+                        "in": "formData",
+                        "description": "link of albums",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/master_sections": {
+            "get": {
+                "tags": [
+                    "ticket"
+                ],
+                "summary": "get all sections of master",
+                "operationId": "master_sections",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "not acceptable"
+                    },
+                    "500": {
+                        "description": "internal server error"
+                    }
+                }
+            }
+        },
+        "/section_seat": {
+            "post": {
+                "tags": [
+                    "ticket"
+                ],
+                "summary": "get seats of section by section link",
+                "operationId": "section_seat",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "sec_link",
+                        "in": "formData",
+                        "description": "link of section_seat",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/matches": {
+            "post": {
+                "tags": [
+                    "match"
+                ],
+                "summary": "get all matches according type is (all - next - prev)",
+                "operationId": "matches",
+                "parameters": [
+                    {
+                        "name": "num_page",
+                        "in": "formData",
+                        "description": " number of page strat from zero ( 0 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "formData",
+                        "description": " limit is number matches will send in each time default ( 12 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "default next (all - next - prev)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/matches/single": {
+            "post": {
+                "tags": [
+                    "match"
+                ],
+                "summary": " get data of single match by link",
+                "operationId": "matchesSingle",
+                "parameters": [
+                    {
+                        "name": "match_link",
+                        "in": "formData",
+                        "description": "link of match",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/news": {
+            "post": {
+                "tags": [
+                    "news"
+                ],
+                "summary": "get news",
+                "description": "",
+                "operationId": "v1_news",
+                "parameters": [
+                    {
+                        "name": "num_page",
+                        "in": "formData",
+                        "description": " number of page start from zero ( 0 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "formData",
+                        "description": " limit is number news will send in each time default ( 12 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/news/single": {
+            "post": {
+                "tags": [
+                    "news"
+                ],
+                "summary": "get single news by link",
+                "operationId": "newsSingle",
+                "parameters": [
+                    {
+                        "name": "news_link",
+                        "in": "formData",
+                        "description": "link of news",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/search": {
+            "post": {
+                "tags": [
+                    "search"
+                ],
+                "summary": "search",
+                "operationId": "search",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "type": "string"
+                    },
+                    {
+                        "name": "search",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/notifications": {
+            "get": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "notifications",
+                "operationId": "notifications",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "not acceptable"
+                    },
+                    "500": {
+                        "description": "internal server error"
+                    }
+                }
+            }
+        },
+        "/update_notif": {
+            "post": {
+                "tags": [
+                    "notifications"
+                ],
+                "summary": "update notifications",
+                "operationId": "update_notif",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "id",
+                        "in": "formData",
+                        "description": "id of notification",
+                        "required": true,
+                        "type": "number"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/version": {
+            "post": {
+                "tags": [
+                    "page"
+                ],
+                "summary": "get version",
+                "operationId": "version",
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/home": {
+            "post": {
+                "tags": [
+                    "page"
+                ],
+                "summary": "get data of home",
+                "operationId": "home",
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "formData",
+                        "description": "default = 5",
+                        "type": "number"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/about": {
+            "post": {
+                "tags": [
+                    "page"
+                ],
+                "summary": "about",
+                "operationId": "about",
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/terms": {
+            "post": {
+                "tags": [
+                    "page"
+                ],
+                "summary": "terms",
+                "operationId": "terms",
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/champions": {
+            "post": {
+                "tags": [
+                    "page"
+                ],
+                "summary": "champions",
+                "operationId": "champions",
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/audience": {
+            "post": {
+                "tags": [
+                    "page"
+                ],
+                "summary": "audience",
+                "operationId": "audience",
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/calendar": {
+            "post": {
+                "tags": [
+                    "page"
+                ],
+                "summary": "calendar",
+                "operationId": "calendar",
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/contact_us": {
+            "post": {
+                "tags": [
+                    "page"
+                ],
+                "summary": "contact_us",
+                "operationId": "contact_us",
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/add_contact_us": {
+            "post": {
+                "tags": [
+                    "page"
+                ],
+                "summary": "add message of contact_us",
+                "operationId": "add_contact_us",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "type": "string"
+                    },
+                    {
+                        "name": "content",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "user_email",
+                        "in": "formData",
+                        "description": "should send it when access_token is empty",
+                        "type": "string"
+                    },
+                    {
+                        "name": "user_name",
+                        "in": "formData",
+                        "description": "should send it when access_token is empty ",
+                        "type": "string"
+                    },
+                    {
+                        "name": "visitor",
+                        "in": "formData",
+                        "description": "This Ip of device",
+                        "type": "string"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "default type is contact and can use (contact)",
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/payment": {
+            "post": {
+                "tags": [
+                    "ticket"
+                ],
+                "summary": "payment ticket",
+                "operationId": "payment",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "cart",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "total_price",
+                        "in": "formData",
+                        "required": true,
+                        "type": "number"
+                    },
+                    {
+                        "name": "type",
+                        "in": "formData",
+                        "description": "type is (seat , product)",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/confirmPayment": {
+            "post": {
+                "tags": [
+                    "ticket"
+                ],
+                "summary": "confirm Payment ticket",
+                "operationId": "confirmPayment",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "orders",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "total_price",
+                        "in": "formData",
+                        "required": true,
+                        "type": "number"
+                    },
+                    {
+                        "name": "resourcePath",
+                        "in": "formData",
+                        "description": "resourcePath from url callback from hyper",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "checkout_id",
+                        "in": "formData",
+                        "description": "checkout_id from url callback from hyper",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/isRegistered": {
+            "post": {
+                "tags": [
+                    "ticket"
+                ],
+                "summary": "check isRegistered or not for ticket",
+                "operationId": "isRegistered",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "cart",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/product_categories": {
+            "post": {
+                "tags": [
+                    "product"
+                ],
+                "summary": "get categories of products",
+                "operationId": "product_categories",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "type": "string"
+                    },
+                    {
+                        "name": "num_page",
+                        "in": "formData",
+                        "description": " number of page start from zero ( 0 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "formData",
+                        "description": " limit is number product_categories will send all data with default ( 0 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/product_category": {
+            "post": {
+                "tags": [
+                    "product"
+                ],
+                "summary": "get product in category by category link",
+                "operationId": "product_category",
+                "parameters": [
+                    {
+                        "name": "cat_link",
+                        "in": "formData",
+                        "description": "link of product_category",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "val_sort",
+                        "in": "formData",
+                        "description": "default is sort by ID (price_asc  - price_desc - rate)",
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default is ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/products": {
+            "post": {
+                "tags": [
+                    "product"
+                ],
+                "summary": "get all products",
+                "operationId": "products",
+                "parameters": [
+                    {
+                        "name": "num_page",
+                        "in": "formData",
+                        "description": " number of page start from zero ( 0 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "formData",
+                        "description": " limit is number products will send in each time default ( 12 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "val_sort",
+                        "in": "formData",
+                        "description": "default is sort by ID (price_asc  - price_desc - rate)",
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/products/single": {
+            "post": {
+                "tags": [
+                    "product"
+                ],
+                "summary": "get single product by product link",
+                "operationId": "productsSingle",
+                "parameters": [
+                    {
+                        "name": "products_link",
+                        "in": "formData",
+                        "description": "link of products",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/product_cart": {
+            "post": {
+                "tags": [
+                    "product"
+                ],
+                "summary": "get all products in cart",
+                "operationId": "product_cart",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/product/addupdate_cart": {
+            "post": {
+                "tags": [
+                    "product"
+                ],
+                "summary": "add or update product in cart",
+                "operationId": "product_addupdate_cart",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "link",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "quantity",
+                        "in": "formData",
+                        "required": true,
+                        "type": "number"
+                    },
+                    {
+                        "name": "weight",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "fees[]",
+                        "in": "query",
+                        "description": "[link_1,link_2,link_3]",
+                        "required": true,
+                        "type": "string",
+                        "collectionFormat": "multi"
+                    },
+                    {
+                        "name": "color",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "name_print",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar or en )",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/product/delete_cart": {
+            "post": {
+                "tags": [
+                    "product"
+                ],
+                "summary": "delete product from cart",
+                "operationId": "product_delete_cart",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "link",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar or en )",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/product/checkout": {
+            "post": {
+                "tags": [
+                    "product"
+                ],
+                "summary": "checkout for all products that found in cart",
+                "operationId": "checkoutProduct",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/product/resultcallback": {
+            "post": {
+                "tags": [
+                    "product"
+                ],
+                "summary": "result callback after return from payment",
+                "operationId": "resultcallback",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "checkout_id",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default = ar (ar, en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/teams": {
+            "post": {
+                "tags": [
+                    "team"
+                ],
+                "summary": "get all main teams",
+                "operationId": "teams",
+                "parameters": [
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/subteams": {
+            "post": {
+                "tags": [
+                    "team"
+                ],
+                "summary": "get sub teams for main team by link",
+                "operationId": "subteams",
+                "parameters": [
+                    {
+                        "name": "team_link",
+                        "in": "formData",
+                        "description": "link of subteams",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default is ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/team/player": {
+            "post": {
+                "tags": [
+                    "team"
+                ],
+                "summary": "get data of teamplayer",
+                "operationId": "teamplayer",
+                "parameters": [
+                    {
+                        "name": "player_link",
+                        "in": "formData",
+                        "description": "link of player or coach",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/profile": {
+            "get": {
+                "tags": [
+                    "profile"
+                ],
+                "summary": "get profile of current user",
+                "operationId": "profile",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    },
+                    "400": {
+                        "description": "not acceptable"
+                    },
+                    "500": {
+                        "description": "internal server error"
+                    }
+                }
+            }
+        },
+        "/update_profile": {
+            "post": {
+                "tags": [
+                    "profile"
+                ],
+                "summary": "v1/update_profile",
+                "operationId": "update profile current user",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "email",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "display_name",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "country",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "city",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "state",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "gender",
+                        "in": "formData",
+                        "type": "string"
+                    },
+                    {
+                        "name": "fcm_token",
+                        "in": "formData",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/mybill": {
+            "post": {
+                "tags": [
+                    "profile"
+                ],
+                "summary": "get bill of current user",
+                "operationId": "mybill",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/update_fcmtoken": {
+            "post": {
+                "tags": [
+                    "profile"
+                ],
+                "summary": " update fcmtoken for firebase",
+                "operationId": "update_fcmtoken",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "fcm_token",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/change_password": {
+            "post": {
+                "tags": [
+                    "profile"
+                ],
+                "summary": "change password",
+                "operationId": "change_password",
+                "parameters": [
+                    {
+                        "name": "access-token",
+                        "in": "header",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "new_password",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "old_password",
+                        "in": "formData",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/videos": {
+            "post": {
+                "tags": [
+                    "video"
+                ],
+                "summary": "get all videos",
+                "operationId": "videos",
+                "parameters": [
+                    {
+                        "name": "num_page",
+                        "in": "formData",
+                        "description": " number of page strat from zero ( 0 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "formData",
+                        "description": " limit is number videos will send in each time default ( 12 )",
+                        "type": "number"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        },
+        "/videos/single": {
+            "post": {
+                "tags": [
+                    "video"
+                ],
+                "summary": " get single video by link",
+                "operationId": "videosSingle",
+                "parameters": [
+                    {
+                        "name": "videos_link",
+                        "in": "formData",
+                        "description": "link of videos",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "lang",
+                        "in": "formData",
+                        "description": "default ar (ar - en)",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "error"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {}
+}

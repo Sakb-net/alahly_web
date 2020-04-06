@@ -1,0 +1,9 @@
+@extends('site.layouts.app')
+@section('content')
+   @include('site.home.silder')
+   @include('site.home.last_match')
+   @include('site.home.news')
+   @include('site.home.videos')
+   @include('site.home.images')
+   @include('site.home.last_product')
+@endsection

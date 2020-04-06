@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>buttons/fav/filled</title>
+    <desc>Created with Sketch.</desc>
+    <g id="buttons/fav/filled" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-2" fill="#D0021B" cx="20" cy="20" r="20"></circle>
+        <g id="heart" transform="translate(12.000000, 13.000000)" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Group" transform="translate(0.041667, 0.041667)">
+                <g id="Shape">
+                    <path d="M15.5794445,1.5052778 C14.7484945,0.673937589 13.6212502,0.206862709 12.4458334,0.206862709 C11.2704167,0.206862709 10.1431723,0.673937589 9.31222229,1.5052778 L8.45833339,2.3591667 L7.6044445,1.5052778 C5.87379885,-0.225367794 3.06786791,-0.225367773 1.33722228,1.50527785 C-0.393423336,3.23592347 -0.393423357,6.04185442 1.33722224,7.77250006 L2.19111113,8.62638896 L8.45833339,14.8936112 L14.7255557,8.62638896 L15.5794445,7.77250006 C16.4107848,6.94155001 16.8778596,5.81430568 16.8778596,4.63888893 C16.8778596,3.46347218 16.4107848,2.33622786 15.5794445,1.5052778 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

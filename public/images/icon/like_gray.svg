@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>185C55F7-FFF5-4A77-BC00-EACE76DB0AAA</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Course-Page" transform="translate(-633.000000, -687.000000)">
+            <g id="buttons/fav/none" transform="translate(633.000000, 687.000000)">
+                <circle id="Oval-2" fill-opacity="0.07" fill="#D0021B" cx="20" cy="20" r="20"></circle>
+                <g id="icons/buttons/heart/outlined" transform="translate(6.000000, 6.000000)" stroke="#D0021B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+                    <g id="Group" transform="translate(6.000000, 6.000000)">
+                        <g id="Shape" stroke-width="2.4000001">
+                            <path d="M15.4720007,2.48800012 C14.6467813,1.66239326 13.5273111,1.19853957 12.3600006,1.19853957 C11.1926901,1.19853957 10.0732198,1.66239326 9.24800043,2.48800012 L8.40000039,3.33600016 L7.55200035,2.48800012 C5.83329013,0.769289945 3.04671032,0.769289966 1.32800011,2.48800017 C-0.390710087,4.20671037 -0.390710108,6.99329018 1.32800007,8.71200041 L2.17600011,9.56000045 L8.40000039,15.7840007 L14.6240007,9.56000045 L15.4720007,8.71200041 C16.2976076,7.88678101 16.7614613,6.76731074 16.7614613,5.60000027 C16.7614613,4.43268979 16.2976076,3.31321952 15.4720007,2.48800012 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

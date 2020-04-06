@@ -1,0 +1,188 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 12, 2019, 6:00:52 PM
+    Author     : Eman
+*/
+
+a {cursor: pointer;}
+p {color: #000;}
+.a_not_active{pointer-events: none;}
+.btn_pay{
+    background: #4CAF50;
+    border-color: #4CAF50;
+}
+.icon_remove{
+    color: red;
+    font-size:18px;
+}
+.icon_ok{
+    color: green;
+    font-size:20px;
+}
+.hidden,.hide{
+    display: none;
+}
+.but-input{
+    color: #fff;
+}
+.account-details-form .input-height{
+    height: 47px;
+}
+.modal-footer{
+    text-align: right;
+}
+.circle{
+    margin: 2px 4px;
+}
+.circle_empty{
+    background: #fff;
+}
+.circle.cir_cart{
+    background-color:#72bd72; 
+}
+.mlab_chair{
+    width: 380px;
+    margin: auto;
+}
+.footer_style{
+    position: static;
+    background: #000;
+}
+.modal-open .sizeModal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.sizeModal .modal-body {
+    position: relative;
+    padding: 15px 0px 0px;
+}
+.sizeModal .modal-footer {
+    padding: 15px 15px 0px 15px;
+}
+.comment_favourites{
+    display: initial;
+}
+.remove_comments i{
+    color: red;
+}
+.child_list_comment{
+    background: #efeeee;
+    margin-right: 70px;
+}
+.list-group-item .active_cat,
+nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu > li >.active_subli{
+    color:#08983c;
+}
+.activ_cart{
+    background-color: transparent;
+    border-bottom: 3px solid #ffde00;
+}
+.activ_cart i{
+    color:#08983c;
+}
+.ratting-form-wrapper .ratting-form form .star-box .ratting-star {
+    width: 160px;
+}
+.com_rp_prod{
+    margin-top: 20px;
+}
+.comment-date{
+    margin-right: 25px;
+    font-size: 14px;
+}
+input[type="radio"], input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-left: 5px;
+}
+.prod-weight{
+    font-weight: normal !important;
+    background: #008640;
+    min-width: auto !important;
+    margin:0px !important;
+    margin-left: 10px;
+    color: #fff !important;
+    padding: 2px 20px;
+    border-radius: 4px;
+}
+.cart-table .table_fees{
+    margin-bottom: 15px;
+}
+.cart-table .table_fees tbody tr td{
+    /*text-align: center;*/
+    border: none;
+    padding: 10px 13px;
+    vertical-align: middle;
+    font-weight: 600;
+    /*border-bottom: 1px solid #dddddd;*/
+}
+.msg_name_print{
+    color: red;
+    margin-right: 19px;
+    background: #fde8e8e3;
+    border-radius: 16px;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.p_booking{
+    font-weight: bold;
+    text-align: center;
+    color: #c31111;
+}
+.sizeModal .foot_booking{
+   padding: 15px; 
+}
+.post-thumb img {
+    width: 340px;
+}
+.our-team img {
+    width: 100%;
+    height: 300px;
+}
+.our-team .person-details{
+   height: 112px;
+}
+.prod-slider .slides li img{
+    height: 400px;
+}
+.flexslider .slides img{
+    height: 116px;
+}
+@media (min-width: 1024px){
+    nav.navbar.bootsnav ul.nav > li > a {
+        padding: 30px 5px;
+        font-weight: 600;
+        margin: 0 5px;
+    }
+}
+/*@media (max-width:1226px) and  (min-width:768px){*/ 
+@media (min-width:768px){ 
+    .sizeModal{
+        width: 60%;
+        margin: auto;
+    }
+}
+@media (max-width:768px) and  (min-width:500px){ 
+    .sizeModal{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width:500px) and  (min-width:400px){ 
+    .sizeModal{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width:450px){ 
+    .circle{
+        margin: 0.5px;
+    }
+    .mlab_chair{
+        width: 300px;
+    }
+}

@@ -1,0 +1,93 @@
+/* hear admin*/
+.skin-blue .main-header .navbar,
+.skin-blue .main-header li.user-header {
+    background-color: #3cbc6e;
+}
+.skin-blue .main-header .logo {
+    background-color: #36a953;
+    color: #fff;
+    border-bottom: 0 solid transparent;
+}
+.skin-blue .main-header .logo:hover,
+.skin-blue .main-header .navbar .sidebar-toggle:hover{
+    background-color: #00a65a;
+}
+.skin-blue .sidebar-menu > li.active > a, .skin-blue .sidebar-menu > li:hover > a {
+    color: #fff;
+    background: #1e282c;
+    border-right-color: #00a65a !important;
+    /*border-left-color: #3cbc6e;  #faa61a*/
+}
+.nav-tabs-custom > .nav-tabs > li.active {
+    border-top-color: #00a65a;
+}
+
+.sidebar-menu li > a > .pull-right {
+    margin-top: 2px !important;
+    float: left !important;
+}
+/* end hear admin*/
+.datepicker {
+    width:380px;
+}
+.padding-40{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.padding-30{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.padding-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.select-icon {
+    font-family: 'FontAwesome', 'Second Font name';
+}
+.btn-option,.btn-post{
+    width: 15%;
+    padding: 3px 0px;
+    font-size: 12px;
+}
+.btn-post{
+    width: 9%;
+}
+.btn-user{
+    width: 22%;
+    padding: 6px;
+}
+.btn-state{
+    width: 50%;
+    padding: 3px 0px;
+    font-size: 12px;
+}
+#sortable1, #sortable2 {
+    border: 1px solid #eee;
+    width: 100%; /*225px*/
+    min-height: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 0 0;
+    float: right;
+    margin-right: 10px;
+  }
+  #sortable1 li, #sortable2 li {
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 98%;/*210px;*/
+  }
+  .colorpicker-visible{
+      right: 598px;
+  } 
+  
+.mapCanvas{
+    position: relative;
+    overflow: hidden;
+    height: 225px;
+}   
+.radio input[type=radio], .radio-inline input[type=radio], 
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox]{
+    transform: scale(1.5);
+}
